@@ -1,0 +1,6 @@
+<button [routerLink]="'/tag/create'">ADD</button>
+<br/>
+<br/>
+<div *ngFor="let tag of listTag, index as i">
+  <p>{{i}}____{{tag.name}}____{{tag.id}}____<button [routerLink]="'/tag/update/'+ tag.id">UPDATE</button>____<button [routerLink]="'/tag/delete/'+ tag.id">DELETE</button></p>
+</div>
