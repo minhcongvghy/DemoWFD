@@ -31,4 +31,8 @@ export class TagService {
   createTag(tag: Tag): Observable<Tag> {
     return this.http.post(this.URL_TAG, tag);
   }
+
+  searchTagByName(tag: Tag): Observable<Tag[]> {
+    return this.http.post<Tag[]>(this.URL_TAG + 'search-by-name', tag);
+  }
 }

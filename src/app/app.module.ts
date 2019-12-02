@@ -11,6 +11,7 @@ import { UpdateTagComponent } from './update-tag/update-tag.component';
 import { HomeComponent } from './home/home.component';
 import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
+import { SearchTagComponent } from './search-tag/search-tag.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     CreateTagComponent,
     DeleteTagComponent,
     UpdateTagComponent,
-    HomeComponent
+    HomeComponent,
+    SearchTagComponent
   ],
   imports: [
     BrowserModule,

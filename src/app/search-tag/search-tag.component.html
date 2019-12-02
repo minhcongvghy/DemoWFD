@@ -1,0 +1,12 @@
+<form [formGroup]="tagForm">
+  <input type="text" formControlName="name" name="name">
+  <button (click)="searchTag()">Search</button>
+</form>
+<div *ngIf="this.tagList">
+
+<div *ngFor="let tag of tagList">
+  <label>Id</label>____________<label>Name</label>
+  <p>{{tag.id}}____________{{tag.name}}</p>
+</div>
+
+</div>

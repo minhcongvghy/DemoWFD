@@ -6,6 +6,7 @@ import {DiaryComponent} from './diary/diary.component';
 import {CreateTagComponent} from './create-tag/create-tag.component';
 import {UpdateTagComponent} from './update-tag/update-tag.component';
 import {DeleteTagComponent} from './delete-tag/delete-tag.component';
+import {SearchTagComponent} from './search-tag/search-tag.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'tag/delete/:id',
     component: DeleteTagComponent
+  },
+  {
+    path: 'tag/search',
+    component: SearchTagComponent
   }
 ];
 
